@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Multicore ICT Solutions: Unleash Your Tech Mastery. Elevate your skills with our cutting-edge ICT services and comprehensive courses in web development, Android app development, cybersecurity, and more. Join Multicore for an innovative journey towards expertise">
+    <meta name="keywords" content="ICT Services,Android App Development Training,Cybersecurity Courses,Tech Skill Enhancement,Technology Innovation,Expert Guidance,IT Solutions,IT Training,Tech Education,Networking Solutions,Cloud Computing Training,Software Development Courses">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Your Name">
+    <meta name="publisher" content="multicore ict solutions">
+
+        
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Tech Website Title">
+    <meta name="twitter:description" content="A concise description of your tech website.">
+    <meta name="twitter:image" content="URL to a representative image for your website">
+    
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="Your Tech Website Title">
+     <meta property="og:description" content="A concise description of your tech website.">
+     <meta property="og:image" content="URL to a representative image for your website">
+     <meta property="og:url" content="URL of your website">
+     <meta property="og:type" content="website">
+    <title>Multicore kidszone</title>
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/multicore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.css">
+    <link rel="stylesheet" href="splide-master/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.css"> -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+<style>
+  
+  .contact_us{
+    margin: 20px auto;
+    width: 50%;
+   
+  }
+  .contact_us button{
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    text-transform: capitalize;
+    font-family: poppins;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    margin: 0px auto;
+  }
+  
+  .class_b{
+    padding: 10px 20px;
+  }
+  .class_b button{
+    padding: 10px;
+    border: 1px solid #f44336;
+    font-size: 15px;
+    color: #f44336;
+    background-color: white;
+    border-radius: 30px;
+   
+    font-family: poppins;
+   transition: background-color 0.5s ease;
+
+  }
+  .class_b button:hover{
+    color: white;
+    background-color: #f44336;
+  }
+  .course-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-section h1 {
+    font-size: 24px;
+    color: #333;
+}
+.bg_dark{
+  background-color: red;
+}
+.test_header_1{
+  display: flex;
+  
+  justify-content: space-between;
+}
+.course-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.topics-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.topics-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.purchase-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.purchase-links a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.purchase-links img {
+    width: 70px;
+    height: 40px;
+    margin-right: 8px;
+}
+.testimony-card{
+  background-color: white;
+ height: 30vh; 
+}
+.container_accordion{
+  display: flex;
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-around;
+}
+.accordion-container h3{
+  font-size: 40px;
+  text-align: left;
+  padding: 10px 20px;
+  font-family: poppins;
+}
+.accordion-container small{
+  padding: 20px;
+  color: #f44336;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.accordion-container{
+  width: 50%;
+  margin-right: 20px;
+}
+.image-accordion{
+  width: 40%;
+}
+.image-accordion img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.accordion{
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.accordion-items{
+  margin: 4px 3px;
+}
+.accordion-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #141414;
+  font-family: poppins;
+  text-decoration: none;
+  background-color: #fffffff1;
+  font-size: 1.rem;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+
+}
+.accordion-link:hover{
+ text-decoration: none;
+color: black;
+}
+.accordion-link .accordion_icons{
+  transition: transform 0.3s ease;
+}
+.accordion-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: white;
+  padding: 0 15px;
+  text-align: center;
+  margin: 3px 4px;
+  border-radius: 10px;
+}
+.accordion-content p {
+  margin: 15px 0px;
+}
+.accordion-items:target .accordion-content{
+  max-height: 100px;
+}
+.accordion-items:target .accordion-link .accordion_icons{
+  content: "-";
+}
+.accordion-items:target .accordion-link{
+  background-color: tomato;
+  color: white;
+
+}
+.test_btn{
+  background-color: #e1e9f8;
+  padding: 2px 6px;
+  border-radius: 30px;
+}
+.testionial h2{
+width: 40%;
+padding: 20px;
+font-family: 'Nunito', sans-serif;
+margin: 0px auto;
+}
+.test_btn span i{
+  color: #f9be25;
+  padding: 2px 3px;
+  
+}
+.testimony-card p{
+  width: 100%;
+}
+.top_menu{
+margin-top: 10%;
+position: relative;
+}
+.overlay3 {
+    left: 6%;
+    top: 18%;
+}
+.test_btn1:not(.test_btn) {
+  color: #4088d0;
+  font-size: 22px;
+}
+.testionial_card{
+  padding: 10px;
+  margin: 3px 5px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.showa{
+  bottom: 0%;
+  left: 0%;
+}
+
+.test_bottom{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius:30px ;
+  flex-wrap: wrap;
+  background-color: #f4980e;
+}
+.test_bottom img{
+  width: 50px;
+height: 50px;
+margin: -10px 3px ;
+  background: white;
+  padding: 5px;
+  border-radius: 50px;
+  vertical-align: top;
+} 
+.test_bottom p {
+  line-height: 15px;
+  color: white;
+  text-transform: capitalize;
+}
+.logo_mult {
+position:absolute;
+ width: 15%;
+ top: -4rem; 
+left: 30px;
+}
+.overlay5{
+  width: 20%;
+  top: 30%;
+  left: 35%;
+}
+.overlay5 img{
+  width: 30%;
+  
+}
+.service-section3 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 40px auto;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.service-section3.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-image3 {
+    flex: 1;
+}
+
+.service-image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.service-image3 img:hover {
+    transform: scale(1.05);
+}
+
+.service-content3 {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffffff 0%, #64ed74 100%);
+}
+
+.service-content3 h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.service-content3 p {
+    margin: 10px 0;
+    color: #555;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 19px;
+}
+
+.service-content3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-content3 li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.animated-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+.success-message {
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.kids_content h1{
+  font-size: 28px;
+  padding: 10px 5px;
+}
+#signupForm{
+width: 100%;
+}
+#signupForm label{
+  display: block;
+}
+#signupForm .form-group{
+  width: 100%;
+}
+#signupForm .form-group input{
+width: 100%;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#signupForm button{
+      background-color: tomato;
+    padding: 10px 18px;
+    border: none;
+    margin: 0px 7rem;
+    border-radius: 20px;
+    color: white;
+
+}
+#signupForm .sub{
+  width: 102%;
+}
+.hmmm{
+  width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+    .kids_content h1 span{
+      position: relative;
+    }
+    .kids_content h1 span.des{
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.877);
+  font-family:  Montserrat;
+  background-color: #ff5722e6;
+  color: white;
+border-radius: 50% 30% 50% 30%;
+  padding: 2px 4px;
+  margin: 3px 0px;
+
+}
+.modal_row h2 {
+  text-transform: capitalize;
+}
+.modal-body{
+  display: flex;
+  width: 95%;
+  align-items: flex-start;
+  padding: 0px !important;
+  margin: 0px auto;
+  justify-content: space-around;
+}
+.modal_row{
+  width: 48%;
+  padding: 10px;
+}
+.modal_row h2{
+  text-align: center;
+}
+.modal_row p{
+  text-align: center;
+}
+.modal_img{
+width: 50%;
+
+padding: 0px !important;
+}
+.kidszone_12{
+  justify-content: center;
+}
+.modal_img img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+.hmmm h2{
+text-transform: capitalize;
+}
+
+#modal-form{
+  width: 100%;
+}
+.modal-header{
+  width: 10%;
+ padding: 5px ;
+ top: -2%;
+ right: -3%;
+ border: none !important;
+ z-index: 100000000000000000000000000;
+height: 30px;
+}
+.modal-header button{
+   
+
+   border: none;
+
+}
+.modal-header button span{
+   background-color: tomato;
+    border-radius: 50px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    
+}
+.close{
+  background-color: tomato;
+  opacity: 1;
+}
+
+
+    .des:before{
+      content: "";
+      position: absolute;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #6dc4ff #ff5622d0 transparent transparent;
+      top: 30%;
+      transform: rotate(47deg);
+    
+      left: -30px;
+
+    }
+    /* .des:after{
+      content: "";
+      position: absolute;
+      top: 30%;
+      transform: rotate(-226deg);
+      border-width: 12px;
+      border-style: solid;
+      border-color: #6dc4ff #ef7b0fd0 transparent transparent;
+      right: -30px;
+    } */
+.icon23 .icon {
+    margin-right: 12px;
+    text-align: center;
+    font-size: 24px;
+    background-color: white;
+    padding: 12px 14px;
+    border-radius: 50px;
+    transition: color 0.3s;
+}
+
+.service-content3 li .icon-integration::before {
+    content: '\1F4BB'; /* Laptop emoji */
+}
+
+.service-content3 li .icon-standalone::before {
+    content: '\1F4D6'; /* Book emoji */
+}
+
+.service-content3 li:hover .icon {
+    color: #0056b3;
+}
+
+.whatsapp-button3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-button3 .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-button3:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+   text-decoration: none;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: white;
+}
+
+.whatsapp-button3 .icon-whatsapp::before {
+    content: '\f232'; /* FontAwesome WhatsApp icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logo_mult {
+        position: absolute;
+        width: 30%;
+        top: -2rem;
+        left: 15px;
+    }
+.top_menu{
+margin-top: 40%;
+position: relative;
+}
+.overlay5{
+  width: 20%;
+    overflow: hidden;
+    top: -2%;
+    left: 72%;
+}
+.overlay5 img {
+    width: 60%;
+}
+.coding_items{
+  flex-direction: column;
+  padding: 15px;
+        margin: 5px 6px;
+}
+.overlay1 {
+    top: -3%;
+}
+.modal-header{
+  top: 1%;
+  right: 16%;
+  
+
+}
+
+.modal-header button span{
+  background-color: tomato;
+  color: white;
+  opacity: 1 !important;
+  z-index: 1000000000000000000000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.kids_content h1 {
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+}
+.img_fluis {
+  margin-left: 0px;
+}
+.overlay3{
+left: 0%;
+    top: 6%;
+}
+.overlay2 img{
+  width: 18%;
+}
+.background_Image_content {
+      width: 100%;
+          top: 10%;
+}
+.overlay43{
+  top: 1%;
+}
+.container_accordion{
+  flex-direction: column;
+  width: 100%;
+}
+.accordion-container{
+  width: 100%;
+}
+.accordion-container h3{
+  text-align: left;
+  width: 100%;
+  margin: 0px;
+  font-size: 20px;
+}
+.accordion-container small{
+  padding: 10px 20px;
+}
+.image-accordion {
+  width: 100%;
+  padding: 10px 20px;
+}
+.service-section3{
+  flex-direction: column;
+}
+
+.background_Image_content  p{
+      width: 100%;
+      padding: 16px;
+}
+.showa{
+display: none;
+}
+.testionial h2{
+  width: 100%;
+  text-align: center;
+}
+.testionial_card{
+  width: 90%;
+}
+#partner{
+  width: 95%;
+    margin: 0px auto;
+}
+.overlay45{
+  bottom: 10%;
+  left: 30%;
+}
+.background_Image{
+  height: 80vh;
+}
+.whatsapp-button3{
+  padding: 15px 0px;
+}
+.modal-content{
+  width: 100vw;
+    overflow-y: scroll;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.modal-dialog{
+  margin: 0px;
+}
+.modal-body{
+  flex-direction: column;
+}
+.modal_img{
+  width: 100%;
+}
+.modal_row{
+  width: 100%;
+}
+}
+@media screen and (max-width: 360px) {
+  .background_Image_content{
+    top: 5%;
+  }
+  .background_Image_content h1{
+    font-size: 20px;
+  }
+  .countdown{
+    gap: 10px;
+  }
+  .logo_mult {
+        position: absolute;
+        width: 30%;
+        top: -1.5rem;
+        left: 15px;
+    }
+}
+@media screen and (max-width: 320px){
+  .background_Image_content p {
+    padding: 7px;
+  }
+  .countdown {
+        gap: 3px;
+    }
+    .logo_mult {
+        position: absolute;
+        width: 32%;
+        top: -1rem;
+        left: 15px;
+    }
+    .kids_content h1{
+      text-align: center;
+      margin: 0px auto;
+    }
+    .techstand{
+      top: -40px;
+      right: 24%;
+    }
+    .whatsapp-button3{
+      font-size: 0.95rem;
+    }
+
+}
+@media only screen and (min-width: 375px) and (max-width: 385px){
+  .background_Image_content{
+    top: 5%;
+  }
+  .background_Image_content h1{
+    font-size: 25px;
+  }
+  .background_Image_content p{
+padding: 10px;
+  }
+  .countdown{
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 386px) and (max-width: 390px){
+  .background_Image_content h1{
+    font-size: 30px;
+  }
+  .background_Image_content{
+    top: 11%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 640px) {
+  .logo_mult{
+    width: 25%;
+    top: -3rem;
+  }
+  .img_fluis img{
+    width: 85%;
+    height: 45vh;
+  }
+  .img_fluis{
+    margin: 0px 40px;
+  }
+  .coding_items{
+    width: 70%;
+    margin: 0px auto;
+  }
+  .top_menu{
+    margin-top: 25%;
+  }
+  .background_image{
+    height: 60vh;
+  }
+  #partner{
+    width: 90%;
+    margin: 0px auto;
+  }
+  .testionial_card{
+    width: 90%;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 700px) and (max-width:740px) {
+.navbar{
+  width: 100vw;
+}
+.container_accordion{
+  flex-direction: column;
+}
+.kids_content{
+  max-width: 100%;
+}
+.logo_mult{
+  top: -1rem;
+}
+.kids_img{
+  max-width: 100%;
+}
+.img_fluis{
+  margin: 0px 20%;
+}
+.img_fluis2{
+  margin: 0px 20%;
+}
+.background_image{
+  height: 54vh;
+}
+.kidszone_12{
+  margin-left: 4%;
+  width: 95%;
+}
+
+.testionial h2 {
+  width: 80%;
+}
+#partner{
+  width: 95%;
+    margin: 0px auto;
+}
+.testionial_card{
+  width: 90%;
+  margin: 0px auto;
+}
+.image-accordion{
+width: 100%;
+}
+.top_menu .row{
+  flex-direction: column;
+}
+.top_menu {
+    margin-top: 23%;
+    position: relative;
+}
+.img_fluis img {
+        width: 100%;
+        height: 40vh;
+    }
+    .coding_items {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .overlay1{
+      top: -4%;
+    }
+    .overlay5{
+      width: 37%;
+    top: -2%;
+    left: 75%;
+    }
+    .accordion-container{
+      width: 100%;
+    }
+    .testionial .row{
+      flex-direction: column;
+    }
+} 
+@media only screen and (min-width: 740px) and (max-width: 912px) {
+.navbar{
+ width: 100vw;
+}
+.overlay_container_row{
+  flex-direction: column;
+}
+.kids_content{
+  max-width: 80%;
+}
+.kids_contents{
+  max-width: 100%;
+}
+.kidszone_123{
+display: none;
+}
+.coding_items {
+        width: 65%;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    .overlay1 {
+    left: 19%;
+}
+.background_image{
+  height: 57vh;
+}
+#partner{
+  width: 95%;
+    margin: 0px auto;
+}
+.background_Image_content p{
+font-size: 25px;
+width: 100%;
+
+}
+.background_Image_content h1{
+font-size: 34px;
+}
+.image-accordion img{
+  width: 80%;
+}
+.logo_mult{
+  top: -1.5rem;
+}
+.container_accordion{
+  flex-direction: column;
+}
+.accordion-container{
+width: 100%;
+}
+.image-accordion{
+  width: 100%;
+}
+.kidszone_12{
+  width: 90%;
+  margin: 0px 18%;
+  flex-direction: column;
+}
+.testionial h2{
+  width: 100%;
+}
+.testionial_card{
+  max-width: 70% ;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+</style>
+</head>
+<body>
+   <div class="whatsapp_button" style="position: fixed; z-index: 1000000000000000; bottom: 30px; right: 20px; font-size: 30px;">
+<a href="https://api.whatsapp.com/send?phone=07085433123" style="background-color: #25d366;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);color: white;font-weight: 700; border-radius: 50%; padding: 2px 10px;"><span><i class="fa fa-whatsapp"></i></span></a>
+  </div>
+    <nav class="navbar navbar-expand-lg  fixed-top py-3 d-block shadow-transition" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image: none; transition: background-color 0.35s ease 0s;">
+
+      <div class="container" >
+        <div class="brandd" style="width: 5%;" style="position: relative; ">
+          <a class="navbar-brand" href="#home" >
+            <img src="images/Multicore-removebg-preview.png" class="logo_mult"  alt="logo" ></a>
+  </div>
+          <button style="color: rgba(255, 187, 0, 0.815);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="fa fa-navicon" style="font-size:20px;"></span>
+          </button>      <div class="navbar-collapse  mt-4 mt-lg-0 collapse show" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto  pt-lg-0 font-base">
+              <li class="nav-item px-2"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item px-2 "><a class="nav-link "  aria-current="page" href="pageconstruct.html">About Kidszone</a></li>
+              <li class="nav-item px-2 dropdown"><a class="nav-link dropdown-toggle" href="#services"data-toggle="dropdown">Our Services<span><i class="fa fa-caret"></i></span></a>
+                <ul class="dropdown-menu" style=" width: 180px;">
+                  <li><a href="#kids_zone" class="px-2 pt-3" style="text-decoration: none;"> kidszone Programs</a></li>
+                  <li><a href="servicepage.html" class="px-2 pt-3" style="text-decoration: none;">Our Services</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item px-2"><a class="nav-link" href="#Course">Course</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="pageconstruct.html">Our blog</a></li>
+            </ul>
+            <div class="dropdown d-none d-lg-block">
+              <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
+               
+              </div>
+            </div>
+            <a class="mt-2 btn bck order-lg-0" href="kidszone.html#partner">Partner</a>
+           
+          </div>
+        </div>
+      </nav>
+      <section class="container-fluid top_menu " id="home">
+        <div class="overlay1" style="position: absolute;">
+          <img src="icons/robot.gif" style="width:15%; "draggable="false">
+        </div>
+        <div class="overlay2" style="position: absolute;">
+          <img src="icons/brain.gif" style="width:10%;">
+        </div>
+        <div class="overlay3" style="position: absolute;">
+          <img src="icons/light-bulb.gif" style="width:20%;">
+        </div>
+        <div class="overlay_container">
+          <div class="overlay5" style="position: absolute;">
+            <img src="icons/robot (1).gif">
+          </div>
+        </div>
+     
+      
+        <div class="row overlay_container_row"  style="align-items:center;">
+            <div class="col-md-6 kids_content" >
+                <h1 style="font-family: poppins; font-weight: 600; color: rgb(0, 0, 0);">Let Your Child learn<br> <span class="des">Tech</span> <br>along   Academic</span></h1>
+
+                <p style="font-family: Montserrat; font-size: 17px; font-weight: 400;"> Let's leverage your child's screen time to  teach them how to code,design and create.
+                   Your child's fluency with technology is a gift—let's 
+                   help you harness that potential 
+                  and build their confidence along with their academic success.</p>
+<div class="coding_items">
+  <button href="#" id="color1" data-toggle="modal" data-target="#exampleModal"
+    data-title="Coding and robotics" data-img="images/coding.jpeg" data-content="
+    <h2> coding and robotics </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sunt voluptatibus dolorem aspernatur laboriosam 
+      </p>
+    "
+  data-form='<div class="container">
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="numKids">Number of Kids:</label>
+                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
+            </div>
+            <div class="form-group">
+                <p>Total Amount: <span id="totalAmount">$100</span></p>
+            </div>
+            <div class="form-group sub">
+                <button type="submit" id="submitBtn">Sign Up</button>
+            </div>
+        </form>
+        <div id="message" class="hidden">
+            <p class="success-message">We will get back to you shortly!</p>
+            <div class="animated-icons">
+                <!-- Animated icons or loading animation can be added here -->
+                <div class="icons"></div>
+                <div class="icons"></div>
+                <div class="icons"></div>
+            </div>
+        </div>
+    </div>'>coding and robotics</button>
+  <button href="#" id="color2" data-img="images/web.jpeg" data-toggle="modal" data-target="#exampleModal"  data-content="
+  <h2>web development </h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus dolorem aspernatur laboriosam dicta, 
+    reiciendis harum delectus, impedit unde, ipsa suscipit accusantium tempore.</p>
+  "  data-title="web development"  data-form=' <div class="container">
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="numKids">Number of Kids:</label>
+                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
+            </div>
+            <div class="form-group">
+                <p>Total Amount: <span id="totalAmount">$100</span></p>
+            </div>
+            <div class="form-group sub">
+                <button type="submit" id="submitBtn">Sign Up</button>
+            </div>
+        </form>
+        <div id="message" class="hidden">
+            <p class="success-message">We will get back to you shortly!</p>
+            <div class="animated-icons">
+                <!-- Animated icons or loading animation can be added here -->
+                <div class="icons"></div>
+                <div class="icons"></div>
+                <div class="icons"></div>
+            </div>
+        </div>
+    </div>' >
+    
+    
+    web design</button> 
+  <button href="#" id="color3"  data-img="images/multi1.jpeg" data-toggle="modal" data-target="#exampleModal"  data-title="2d and 3d animation"
+  data-content="
+    <h2>2d and 3d animation </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus dolorem aspernatur laboriosam dicta, 
+      reiciendis harum delectus, impedit unde, ipsa suscipit accusantium tempore.</p>
+    "
+  data-form=' <div class="container">
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="numKids">Number of Kids:</label>
+                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
+            </div>
+            <div class="form-group">
+                <p>Total Amount: <span id="totalAmount">$100</span></p>
+            </div>
+            <div class="form-group sub">
+                <button type="submit" id="submitBtn">Sign Up</button>
+            </div>
+        </form>
+        <div id="message" class="hidden">
+            <p class="success-message">We will get back to you shortly!</p>
+            <div class="animated-icons">
+                <!-- Animated icons or loading animation can be added here -->
+                <div class="icons"></div>
+                <div class="icons"></div>
+                <div class="icons"></div>
+            </div>
+        </div>
+    </div>'>2d and 3d animation</button>
+  <button href="#" id="color4" data-img="images/gra.jpeg" data-toggle="modal" data-target="#exampleModal"  data-title="Graphics and design"
+  data-content="
+    <h2> Graphic design </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus dolorem aspernatur laboriosam dicta, 
+      reiciendis harum delectus, impedit unde, ipsa suscipit accusantium tempore.</p>
+    "
+  data-form=' <div class="container">
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="numKids">Number of Kids:</label>
+                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
+            </div>
+            <div class="form-group">
+                <p>Total Amount: <span id="totalAmount">$100</span></p>
+            </div>
+            <div class="form-group sub">
+                <button type="submit" id="submitBtn">Sign Up</button>
+            </div>
+        </form>
+        <div id="message" class="hidden">
+            <p class="success-message">We will get back to you shortly!</p>
+            <div class="animated-icons">
+                <!-- Animated icons or loading animation can be added here -->
+                <div class="icons"></div>
+                <div class="icons"></div>
+                <div class="icons"></div>
+            </div>
+        </div>
+    </div>'> graphics design</button>
+</div>
+
+            </div>
+            <div class="col-md-6 d-flex kids_contents ">
+                <div class="row">
+                    <div class="col-md-6 kids_img" style="margin-right: 0px;">
+                        <div class="img_fluid1 img_fluis">
+                            <img src="images/multi1.jpeg" draggable="false">
+                                            </div>
+                                            <div class="img_fluid2 img_fluis">
+                                                <img src="images/tryit.jpeg" draggable="false">
+                                                                </div>
+                    </div>
+                    <div class="col-md-6 kids_img">
+                        <div class="img_fluid3 img_fluis erty" >
+                            <img src="images/kl.jpeg" draggable="false">
+                                            </div>
+                                            <div class="img_fluid4 img_fluis erty">
+                                                <img src="images/multi2.jpeg" draggable="false">
+                                                                </div>
+                    </div>
+                </div>
+ 
+                                               </div>
+        </div>
+     </section>
+  
+
+
+</div>
+
+<div class="background_image" style="background-image: url(images/image.jpeg); background-attachment: fixed;">
+  <div class="overlay1 overlay43" style="position: absolute; z-index: 1000;"> 
+    <img src="icons/kite-removebg-preview.png" style="width:15%; "draggable="false">
+  </div>
+  <div class="overlay2 overlay45" style="position: absolute; z-index: 1000; bottom: 10px; right: 0px;" >
+    <img src="icons/kite-removebg-preview.png" style="width:15%; ">
+  </div>
+
+
+ <div class="background_Image_content">
+  <h1>Countdown to Kidszone Coding Program</h1>
+  <p>enroll now and 20% for early birth</p>
+  <p>Get ready for our exciting Kids Coding Program starting on August 1st! Enroll your child now to give them a head start in the world of coding.</p>
+  <div class="countdown-container">
+    <div class="countdown">
+        <div>
+            <span id="days">0</span>
+            <small>Days</small>
+        </div>
+        <div>
+            <span id="hours">0</span>
+            <small>Hours</small>
+        </div>
+        <div>
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+        </div>
+        <div>
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+        </div>
+    </div>
+</div>
+<div class="contact_us">
+  <button class="contact_info" id="contact_info">Register Now</button>
+</div>
+ </div>
+ 
+
+</div>
+<div class="container-fluid  accordion_row" style="background-color: rgb(3 169 244 / 5%);">
+  
+  <div class="container_accordion ">
+   
+    <div class="accordion-container">
+      <small>code, create & design</small>
+      <h3>why choose multicore kidszone program </h3>
+      <div class="accordion">
+        <div class="accordion-items" id="items1">
+          <a class="accordion-link" href="#item1">
+            Child-Centric approach <span class="accordion_icons">+</span>
+          </a>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Saepe, alias error. Rerum.</p>
+          </div>
+        </div>
+        <div class="accordion-items" id="items2">
+          <a class="accordion-link" href="#item2">
+           Hands-on-learning <span class="accordion_icons">+</span>
+          </a>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Saepe, alias error. Rerum.</p>
+          </div>
+        </div>
+        <div class="accordion-items" id="items3">
+          <a class="accordion-link" href="#item3">
+            STEM Skill Development <span class="accordion_icons">+</span>
+          </a>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Saepe, alias error. Rerum.</p>
+          </div>
+        </div>
+        <div class="accordion-items" id="items4">
+          <a class="accordion-link" href="#item4">
+          Experienced Educators <span class="accordion_icons">+</span>
+          </a>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Saepe, alias error. Rerum.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="image-accordion ">
+        <img src="images/generate-a-black-girl-picture-of-a-girl-standing-f-8tDK-z1BTgSOYs-lzxI-wg-PGPlyx_-T7iXWhyDeuuSUA-removebg-preview.png" alt="Image">
+    </div>
+  </div>
+  
+</div>
+<div class="section_partner" id="partner">
+  <div class="service-section3" id="service-section3">
+    <div class="service-image3">
+        <img src="images/create-an-image-of-a-handshake-between-two-black-i-iUBaOZliQ26INtH-gkD5sA-ua5pIC7IQ6KURiaaN6nq5A.jpeg" alt="Coding and Robotics">
+    </div>
+    <div class="service-content3">
+        <h2>Our Partnership</h2>
+        <p>We partnered with school  to provide cutting-edge coding and robotics education, Contact us to know more.</p>
+        <ul>
+            <li class="icon23" style="font-family: poppins;">
+                <i class="icon icon-integration"></i>
+                Integrated coding into ict curriculum
+            </li>
+            <li class="icon23" style="font-family: poppins;">
+                <i class="icon icon-standalone"></i>
+                As a standalone course
+            </li>
+        </ul>
+        <a href="https://wa.me/1234567890" class="whatsapp-button3" target="_blank">
+            <i class="fa fa-whatsapp"  style="margin: 0px 4px;"></i> Contact Us on WhatsApp
+        </a>
+    </div>
+</div>
+</div>
+<section class="container-fluid testionial" style="position: relative;">
+  <div class="showa" style="position: absolute;">
+<img src="icons/svg (7).png">
+
+  </div>
+  <h2 class="text-center">what parent and kids says about multicore kidszone program </h2>
+  
+  <div class="row kidszone_12">
+    <div class="col-md-3 testionial_card">
+      <div class="test_header">
+        <div class="test_header_1">
+          <div class="test_btn">
+            <span><i class="fa fa-star"></i>4.3</span>
+            </div>
+            <div class="test_btn1">
+              <span><i class="fa fa-quote-left"></i></span>
+
+              </div>
+          </div>
+          <div class="test_text">
+            <p>Enrolling my child in Multicore KidsZone was one of the best decisions we've made.
+               The program goes beyond teaching coding; it fosters creativity
+               and critical thinking in a way that traditional schooling often misses</p>
+            
+            
+            
+            </div>
+            <div class="test_bottom">
+              <img src="images/pic1.png" alt="" width="10%">
+              <p>
+                
+                <span>Mrs Emeobong Akan</span><br>
+                <small>parent</small>
+                </p>
+              </div>
+        
+        </div>
+      
+      
+      </div>
+      <div class="col-md-3 testionial_card">
+      <div class="test_header">
+        <div class="test_header_1">
+          <div class="test_btn">
+            <span><i class="fa fa-star"></i>4.3</span>
+            </div>
+            <div class="test_btn1">
+              <span><i class="fa fa-quote-left"></i></span>
+
+              </div>
+          </div>
+          <div class="test_text">
+            <p>Multicore KidsZone has been a game-changer for my child's
+               interest in technology. They've developed not only coding skills 
+              but also a deeper understanding of how digital tools can be used creatively</p>
+            
+            
+            
+            </div>
+            <div class="test_bottom">
+              <img src="images/pic2.png" alt="" width="10%">
+              <p>
+                
+                <span>Ernest Akan</span><br>
+                <small>parent</small>
+                </p>
+              </div>
+        
+        </div>
+      
+      
+      </div>
+      <div class="col-md-3 testionial_card">
+      <div class="test_header">
+        <div class="test_header_1">
+          <div class="test_btn">
+            <span><i class="fa fa-star"></i>4.3</span>
+            </div>
+            <div class="test_btn1">
+              <span><i class="fa fa-quote-left"></i></span>
+
+              </div>
+          </div>
+          <div class="test_text">
+            <p>I love Multicore KidsZone! Learning to code
+               has been so much fun. I've made my own games and learned how apps work. 
+               it's cool to see what I can create and they teachers are really nice and always help us when we're stuck</p>
+            
+            
+            
+            </div>
+            <div class="test_bottom">
+              <img src="images/pic1.png" alt="" width="10%">
+              <p>
+                
+                <span>Alex udo</span><br>
+                <small>kid</small>
+                </p>
+        
+        </div>
+      
+      
+      </div>
+    
+    </div>
+    <div class="row justify-content-center kidszone_12 kidszone_123">
+    <div class="col-md-3 testionial_card">
+      <div class="test_header">
+        <div class="test_header_1">
+          <div class="test_btn">
+            <span><i class="fa fa-star"></i>4.3</span>
+            </div>
+            <div class="test_btn1">
+              <span><i class="fa fa-quote-left"></i></span>
+
+              </div>
+          </div>
+          <div class="test_text">
+            <p>Multicore KidsZone has been an enriching experience for my child.
+               The program not only teaches 
+              valuable tech skills but also instills a sense of perseverance and curiosity in them.</p>
+            
+            
+            
+            </div>
+            <div class="test_bottom">
+              <img src="images/pic1.png" alt="" width="10%">
+              <p>
+                
+                <span>Mrs Glory bassey</span><br>
+                <small>parent</small>
+                </p>
+              </div>
+        
+        </div>
+      
+      
+      </div>
+      <div class="col-md-3 testionial_card">
+      <div class="test_header">
+        <div class="test_header_1">
+          <div class="test_btn">
+            <span><i class="fa fa-star"></i>4.3</span>
+            </div>
+            <div class="test_btn1">
+              <span><i class="fa fa-quote-left"></i></span>
+
+              </div>
+          </div>
+          <div class="test_text">
+            <p>Being part of Multicore KidsZone has been awesome! 
+              I've learned so much about computers
+               and coding. Building websites and making animations has been my favorite part.</p>
+            
+            
+            
+            </div>
+            <div class="test_bottom">
+              <img src="images/pic3.png" alt="" width="10%">
+              <p>
+                
+                <span>Inemesit obong</span><br>
+                <small>kid</small>
+                </p>
+              </div>
+        
+        </div>
+      
+      
+      </div>
+      <div class="col-md-3 testionial_card">
+      <div class="test_header">
+        <div class="test_header_1">
+          <div class="test_btn">
+            <span><i class="fa fa-star"></i>4.3</span>
+            </div>
+            <div class="test_btn1">
+              <span><i class="fa fa-quote-left"></i></span>
+
+              </div>
+          </div>
+          <div class="test_text">
+            <p>Multicore KidsZone has been an inspiring journey for my child. 
+              The program's focus on creativity and problem-solving through coding has
+               opened up a whole new world for them.
+             </p>
+            
+            
+            
+            </div>
+            <div class="test_bottom">
+              <img src="images/pic1.png" alt="" width="10%">
+              <p>
+                
+                <span>Mrs Udofia Emmanuel</span><br>
+                <small>parent</small>
+                </p>
+              </div>
+        
+        </div>
+      
+      
+      </div>
+    
+    </div>
+  
+  
+  
+  </section>
+<footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331;"
+            >
+  
+    <section
+             class="d-flex justify-content-between p-4 col-md-8" 
+             style="background-color: #000000f6; margin: 0px auto; border-radius: 5px;"
+             >
+ 
+      <div class="me-5" style="width: 100%;">
+        <div class="row justify-content-center">
+          <div class="col-md-5"> 
+            <span>Get connected with us on social platforms:</span>  
+          </div>
+          
+          <div class="col-md-5">
+            <div>
+     <a href="https://web.facebook.com/mcisolution" class=" me-4 blue">
+   <img src="icons/pngwing.com (3).png" style="width: 50px">
+     </a>
+     <a href="https://www.youtube.com/channel/UCqDb03IzaWdq1KPRQBqnN-A" class=" me-4 red">
+      <img src="icons/pngwing.com (1).png" style="width: 40px">
+     </a>
+     <a href="" class=" me-4 red">
+      <img src="icons/pngwing.com.png" style="width: 40px">
+     </a>
+     <a href="" class=" me-4 green">
+       <i class="fa fa-linkedin"></i>
+     </a>
+    
+   
+   </div>
+       </div>
+        </div>
+      </div>
+      
+    
+ 
+   
+ 
+    </section>
+    
+   
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+      
+        <div class="row mt-3">
+         
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         
+            <h6 class="text-uppercase fw-bold">multicore kidszone</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #fffffff6; height: 2px"
+                />
+            <p>
+              We are Edu-tech company with the vision of 
+              providing quality ICT services and improving ICT education in africa..</p>
+              <p>
+                Our core focus is broadening the potential needs of ai,
+                  digital services and coding in this tech driven world...
+                  join us today and begin your journey in tech world.
+             
+             
+            </p>
+          </div>
+         
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold">our services</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color:#fffffff6; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white" style="text-transform: capitalize;">Web Development</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-transform: capitalize;">content creation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-transform: capitalize;">social media branding</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-transform: capitalize;">computer consultancy</a>
+            </p>
+          </div>
+       
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #fffffff6; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Register with us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Our Courses</a>
+            </p>
+          </div>
+         
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #fffffff6; height: 2px"
+                />
+            <p><i class="fa fa-home mr-3"></i> 34 Umoren Street, Uyo ,AKS</p>
+            <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fa fa-phone mr-3"></i> (+234) 905 587 1577</p>
+            <p><i class="fa fa-whatsapp mr-3"></i> (+234) 911 289 4337</p>
+          </div>
+        
+        </div>
+      </div>
+    
+    </section>
+   
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="#"
+         >multicore ict solution</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer> 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="position: relative;">
+      <div class="modal-header" style="position: absolute;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="hmmm">
+         <div id="modal-content">
+          </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal_img">
+          <img id="modal-img" src="" alt="Image" class="img-fluid mb-3">
+        </div>
+        <div class="modal_row">
+         
+          <div id="modal-form"></div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC0NwWGabDj3XA8pdBnHlRTwFCJL-mUbKQ",
+    authDomain: "kidszone-351ef.firebaseapp.com",
+    projectId: "kidszone-351ef",
+    storageBucket: "kidszone-351ef.appspot.com",
+    messagingSenderId: "782454405037",
+    appId: "1:782454405037:web:f83165503056d60de29324",
+    measurementId: "G-GFP6F2V4C2"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  // Log an event when the page loads
+  window.addEventListener('load', () => {
+    logEvent(analytics, 'page_view', {
+      page_title: document.title,
+      page_location: window.location.href,
+      page_path: window.location.pathname
+    });
+    console.log('Page view event logged');
+  });
+
+  // Log an event when the button is clicked
+  document.getElementById('contact_info').addEventListener('click', () => {
+    logEvent(analytics, 'button_click', { button_id: 'contact_info' });
+    console.log('Button click event logged');
+  });
+</script>
+</body>
+<script>
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const partnerNameElements = document.querySelectorAll('.partner-name');
+    const partnerName = 'ABC Institute'; // Replace with your partner organization name
+
+    partnerNameElements.forEach(element => {
+        element.textContent = partnerName;
+    });
+
+    // Scroll animation
+    const serviceSection = document.getElementById('service-section3');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                serviceSection.classList.add('in-view');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(serviceSection);
+});
+</script>
+<script>
+  // Set the date we're counting down to
+  const countDownDate = new Date("August 1, 2024 00:00:00").getTime();
+
+  // Update the countdown every 1 second
+  const x = setInterval(function() {
+      // Get today's date and time
+      const now = new Date().getTime();
+
+      // Find the distance between now and the countdown date
+      const distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the corresponding elements
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      // If the countdown is over, display some text
+      if (distance < 0) {
+          clearInterval(x);
+          document.querySelector(".countdown-container").innerHTML = "<h1>Countdown Expired</h1>";
+      }
+  }, 1000);
+
+</script>
+
+
+ <script src="assets/js/jquery-3.6.0.min.js"></script>
+ <script src="assets/js/scrolltop.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.js"></script>
+ <script src="assets/js/accordion.js"></script>
+<script src="assets/js/modality.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/timeFunction.js"></script>
+<script src="assets/js/topview.js"></script>
+
+  
+</html>

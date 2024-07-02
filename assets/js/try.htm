@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+#selected-country {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+#country-options {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the input field */
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#country-options li {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#country-options li:hover {
+  background-color: #f1f1f1;
+}
+    </style>
+</head>
+<body>
+    <div class="custom-select">
+        <input type="text" id="selected-country" placeholder="Select a country">
+        <ul class="options" id="country-options"></ul>
+      </div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+// Fetch all country data (including phone dialing codes and flags)
+$(document).ready(function () {
+      const $selectedCountry = $("#selected-country");
+      const $countryOptions = $("#country-options");
+
+      // Fetch country data (including phone dialing codes)
+      $.ajax({
+        url: "https://restcountries.com/v2/all",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+          // Populate the custom dropdown with options
+          data.forEach(function (country) {
+            const countryName = country.name;
+            const dialingCode = country.callingCodes[0];
+
+            // Create an <li> element for each country option
+            const $option = $(`<li data-code="${dialingCode}">${countryName} (+${dialingCode})</li>`);
+            $countryOptions.append($option);
+
+            // Handle option click event
+            $option.on("click", function () {
+              const selectedCode = $(this).data("code");
+
+              // Set the selected country
+              $selectedCountry.val(`${countryName} (+${selectedCode})`);
+
+              // Hide the options
+              $countryOptions.hide();
+            });
+          });
+
+          // Show/hide options on input focus/blur
+          $selectedCountry.on("focus", function () {
+            $countryOptions.show();
+          });
+
+          $selectedCountry.on("blur", function () {
+            $countryOptions.hide();
+          });
+        },
+        error: function (error) {
+          console.error(error);
+        },
+      });
+    });
+</script>
+</html>

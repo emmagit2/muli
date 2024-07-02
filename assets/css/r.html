@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.service-section3 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 40px auto;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.service-section3.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-image3 {
+    flex: 1;
+}
+
+.service-image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.service-image3 img:hover {
+    transform: scale(1.05);
+}
+
+.service-content3 {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.service-content3 h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2.5em;
+}
+
+.service-content3 p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.service-content3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-content3 li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.service-content3 li .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.service-content3 li .icon-integration::before {
+    content: '\1F4BB'; /* Laptop emoji */
+}
+
+.service-content3 li .icon-standalone::before {
+    content: '\1F4D6'; /* Book emoji */
+}
+
+.service-content3 li:hover .icon {
+    color: #0056b3;
+}
+
+.whatsapp-button3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-button3 .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-button3:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}
+
+.whatsapp-button3 .icon-whatsapp::before {
+    content: '\f232'; /* FontAwesome WhatsApp icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="service-section" id="service-section">
+        <div class="service-image">
+            <img src="path-to-your-image.jpg" alt="Coding and Robotics">
+        </div>
+        <div class="service-content">
+            <h2>Our Partnership</h2>
+            <p>We have partnered with <span class="partner-name">[Organization Name]</span> to provide cutting-edge coding and robotics education.</p>
+            <ul>
+                <li>
+                    <i class="icon icon-integration"></i>
+                    Integrated coding into <span class="partner-name">[Organization Name]</span> curriculum
+                </li>
+                <li>
+                    <i class="icon icon-standalone"></i>
+                    As a standalone course
+                </li>
+            </ul>
+            <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+                <i class="icon icon-whatsapp"></i> Contact Us on WhatsApp
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const partnerNameElements = document.querySelectorAll('.partner-name');
+    const partnerName = 'ABC Institute'; // Replace with your partner organization name
+
+    partnerNameElements.forEach(element => {
+        element.textContent = partnerName;
+    });
+
+    // Scroll animation
+    const serviceSection = document.getElementById('service-section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                serviceSection.classList.add('in-view');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(serviceSection);
+});
+
+</script>
+</html>
