@@ -5,40 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Multicore ICT Solutions: Unleash Your Tech Mastery. Elevate your skills with our cutting-edge ICT services and comprehensive courses in web development, Android app development, cybersecurity, and more. Join Multicore for an innovative journey towards expertise">
-    <meta name="keywords" content="ICT Services,Android App Development Training,Cybersecurity Courses,Tech Skill Enhancement,Technology Innovation,Expert Guidance,IT Solutions,IT Training,Tech Education,Networking Solutions,Cloud Computing Training,Software Development Courses">
+    <meta name="description" content="Multicore kidszone: Unleash Your Tech Mastery. Elevate your skills with our cutting-edge ICT services and comprehensive courses in web development, Android app development, cybersecurity, and more. Join Multicore for an innovative journey towards expertise">
+    <meta name="keywords" content="python programming for kids, App Development Training for kids,student Cybersecurity Course,Tech Skill Enhancement,tech skill for kids, digital skill for kids, Technology Innovation,Expert Guidance,IT Training,Tech Education for kids,tech education for student,coding and robotics fo kids,teens bootcamp, kids bootcamp,">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Your Name">
-    <meta name="publisher" content="multicore ict solutions">
+    <meta name="author" content="emmanuel edet bassey">
+    <meta name="publisher" content="multicorekidszone">
 
         
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Your Tech Website Title">
-    <meta name="twitter:description" content="A concise description of your tech website.">
+    <meta name="twitter:title" content="MulticoreKidszone">
+    <meta name="twitter:description" content="Training kids digital skills.">
     <meta name="twitter:image" content="URL to a representative image for your website">
     
      <!-- Open Graph Meta Tags -->
-     <meta property="og:title" content="Your Tech Website Title">
-     <meta property="og:description" content="A concise description of your tech website.">
+     <meta property="og:title" content="Multicore Kidszone">
+     <meta property="og:description" content="Training kids digital skills.">
      <meta property="og:image" content="URL to a representative image for your website">
-     <meta property="og:url" content="URL of your website">
+     <meta property="og:url" content="www.multicorekidszone.com">
      <meta property="og:type" content="website">
     <title>Multicore kidszone</title>
     <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/multicore.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.css">
     <link rel="stylesheet" href="splide-master/dist/css/splide.min.css">
+    <link rel="stylesheet" href="font-awesome-master/css/font-awesome.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.css"> -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+ 
 <style>
-  
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
   .contact_us{
     margin: 20px auto;
     width: 50%;
@@ -57,6 +61,9 @@
     cursor: pointer;
     margin: 0px auto;
   }
+  .test_text p{
+      padding: 13px;
+    }
   
   .class_b{
     padding: 10px 20px;
@@ -405,6 +412,57 @@ left: 30px;
   font-size: 28px;
   padding: 10px 5px;
 }
+.modalr {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contentr {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+ .modal-contentr h2 {
+    color: #333;
+}
+
+ .modal-contentr p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.close-btnr {
+    color: tomato;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
 #signupForm{
 width: 100%;
 }
@@ -417,8 +475,8 @@ width: 100%;
 #signupForm .form-group input{
 width: 100%;
     padding: 6px 12px;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 8px;
+    border: 1px solid #00000087;
 }
 #signupForm button{
       background-color: tomato;
@@ -427,6 +485,10 @@ width: 100%;
     margin: 0px 7rem;
     border-radius: 20px;
     color: white;
+
+}
+#signupForm button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 #signupForm .sub{
@@ -497,6 +559,24 @@ text-transform: capitalize;
 #modal-form{
   width: 100%;
 }
+.program{
+  height: 70vh;
+  overflow: hidden;
+  width: 100%;
+}
+.program .overlay_flow{
+  transform: rotate(180deg);
+  bottom: -10px;
+  width: 100%;
+}
+.program .overlay_flow img{
+  width: 100%;
+}
+.program .card-columns{
+  width: 80%;
+  margin: 8% auto;
+  justify-content: center;
+}
 .modal-header{
   width: 10%;
  padding: 5px ;
@@ -524,6 +604,64 @@ height: 30px;
   background-color: tomato;
   opacity: 1;
 }
+.fmodal {
+            display: none;
+            position: fixed;
+            z-index: 1000000000000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.985);
+            justify-content: center;
+            align-items: center;
+        }
+        .fmodal .modal-content {
+            background-color: #fff;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .fmodal .closee {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .closee:hover,
+        .closee:focus {
+            color: hwb(0 0% 100%);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .fmodal .form-group {
+            margin-bottom: 15px;
+        }
+        .fmodal .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .fmodal .form-group input,
+        .fmodal .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .fmodal .form-group button {
+            background-color: #FFA500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .fmodal .form-group button:hover {
+            background-color: #ff8c00;
+        }
 
 
     .des:before{
@@ -611,6 +749,14 @@ color: white;
         top: -2rem;
         left: 15px;
     }
+    
+
+    .navbar{
+      width:100%;
+    }
+    .test_text p{
+      padding: 13px;
+    }
 .top_menu{
 margin-top: 40%;
 position: relative;
@@ -652,12 +798,15 @@ position: relative;
   font-size: 25px;
   text-align: center;
 }
+.kids_content p{
+  padding: 10px;
+}
 .img_fluis {
   margin-left: 0px;
 }
 .overlay3{
 left: 0%;
-    top: 6%;
+    top: 12%;
 }
 .overlay2 img{
   width: 18%;
@@ -728,7 +877,9 @@ display: none;
     flex-direction: column;
     margin: 0px auto;
 }
-
+.img_fluid3 img{
+display: none;
+}
 .modal-dialog{
   margin: 0px;
 }
@@ -915,7 +1066,7 @@ width: 100%;
       flex-direction: column;
     }
 } 
-@media only screen and (min-width: 740px) and (max-width: 912px) {
+@media only screen and (min-width: 740px) and (max-width: 900px) {
 .navbar{
  width: 100vw;
 }
@@ -966,9 +1117,10 @@ font-size: 34px;
 .accordion-container{
 width: 100%;
 }
-.image-accordion{
-  width: 100%;
-}
+    .image-accordion {
+        width: 90%;
+        margin: 0px auto;
+    }
 .kidszone_12{
   width: 90%;
   margin: 0px 18%;
@@ -977,23 +1129,57 @@ width: 100%;
 .testionial h2{
   width: 100%;
 }
+.testionial{
+  overflow: hidden;
+}
 .testionial_card{
   max-width: 70% ;
 }
 }
+@media only screen and (min-width: 800px) and (max-width: 912px){
+  .img_fluis img{
+    height: 30vh;
+  }
+  .img_fluis{
+    padding: 25px;
+  }
+  .background_image{
+    height: 55vh;
+  }
+      .image-accordion img {
+        width: 80%;
+        margin: 0px auto;
+    }
+        .logo_mult {
+        top: -2.5rem;
+    }
+}
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .testionial{
+  overflow: hidden;
+}
+.logo_mult{
+  top: -2rem;
+  left: 20px;
+}
+.background_image{
+      height: 93vh;
+}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/* @media only screen and (min-width: 1200px) and (max-width: ) {
+
+} */
 </style>
 </head>
 <body>
    <div class="whatsapp_button" style="position: fixed; z-index: 1000000000000000; bottom: 30px; right: 20px; font-size: 30px;">
-<a href="https://api.whatsapp.com/send?phone=07085433123" style="background-color: #25d366;
+<a href="https://wa.me/1234567890" style="background-color: #25d366;
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);color: white;font-weight: 700; border-radius: 50%; padding: 2px 10px;"><span><i class="fa fa-whatsapp"></i></span></a>
   </div>
-    <nav class="navbar navbar-expand-lg  fixed-top py-3 d-block shadow-transition" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image: none; transition: background-color 0.35s ease 0s;">
+    <nav class="navbar navbar-expand-lg  fixed-top py-3 d-block shadow-transition" id="navbarNav" data-navbar-on-scroll="data-navbar-on-scroll" style="background-image: none; transition: background-color 0.35s ease 0s;">
 
       <div class="container" >
         <div class="brandd" style="width: 5%;" style="position: relative; ">
@@ -1002,14 +1188,14 @@ width: 100%;
   </div>
           <button style="color: rgba(255, 187, 0, 0.815);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="fa fa-navicon" style="font-size:20px;"></span>
-          </button>      <div class="navbar-collapse  mt-4 mt-lg-0 collapse show" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto  pt-lg-0 font-base">
+          </button>      <div class="navbar-collapse  mt-4 mt-lg-0 collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav   pt-lg-0 font-base">
               <li class="nav-item px-2"><a class="nav-link" href="#home">Home</a></li>
               <li class="nav-item px-2 "><a class="nav-link "  aria-current="page" href="pageconstruct.html">About Kidszone</a></li>
               <li class="nav-item px-2 dropdown"><a class="nav-link dropdown-toggle" href="#services"data-toggle="dropdown">Our Services<span><i class="fa fa-caret"></i></span></a>
                 <ul class="dropdown-menu" style=" width: 180px;">
                   <li><a href="#kids_zone" class="px-2 pt-3" style="text-decoration: none;"> kidszone Programs</a></li>
-                  <li><a href="servicepage.html" class="px-2 pt-3" style="text-decoration: none;">Our Services</a></li>
+                  <li><a href="javascript:void(0)" class="px-2 pt-3" style="text-decoration: none;">Our Services</a></li>
                   
                 </ul>
               </li>
@@ -1047,177 +1233,43 @@ width: 100%;
             <div class="col-md-6 kids_content" >
                 <h1 style="font-family: poppins; font-weight: 600; color: rgb(0, 0, 0);">Let Your Child learn<br> <span class="des">Tech</span> <br>along   Academic</span></h1>
 
-                <p style="font-family: Montserrat; font-size: 17px; font-weight: 400;"> Let's leverage your child's screen time to  teach them how to code,design and create.
-                   Your child's fluency with technology is a gift—let's 
+                <p  class="leverage"  style="font-family: Montserrat; font-size: 17px; font-weight: 400;"><span class="screen">Let's leverage your child's screen time to  teach them how to code,design and create.</span>
+                   <span class="screen1">child's fluency with technology is a gift</span> —
+              <span class="screen2">
+                let's 
                    help you harness that potential 
-                  and build their confidence along with their academic success.</p>
+                  and build their confidence along with their academic success.
+              </span>  </p>
 <div class="coding_items">
   <button href="#" id="color1" data-toggle="modal" data-target="#exampleModal"
-    data-title="Coding and robotics" data-img="images/coding.jpeg" data-content="
+    data-title="Coding and robotics" data-img="images/multi1.jpeg" data-content="
     <h2> coding and robotics </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Sunt voluptatibus dolorem aspernatur laboriosam 
+    <p>Kids dive into the world of coding and robotics,
+       developing logical thinking and problem-solving skills. They’ll build and program robots, turning their imaginative ideas into reality.
       </p>
-    "
-  data-form='<div class="container">
-        <form id="signupForm">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="numKids">Number of Kids:</label>
-                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
-            </div>
-            <div class="form-group">
-                <p>Total Amount: <span id="totalAmount">$100</span></p>
-            </div>
-            <div class="form-group sub">
-                <button type="submit" id="submitBtn">Sign Up</button>
-            </div>
-        </form>
-        <div id="message" class="hidden">
-            <p class="success-message">We will get back to you shortly!</p>
-            <div class="animated-icons">
-                <!-- Animated icons or loading animation can be added here -->
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
-            </div>
-        </div>
-    </div>'>coding and robotics</button>
+    ">coding and robotics</button>
   <button href="#" id="color2" data-img="images/web.jpeg" data-toggle="modal" data-target="#exampleModal"  data-content="
   <h2>web development </h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus dolorem aspernatur laboriosam dicta, 
-    reiciendis harum delectus, impedit unde, ipsa suscipit accusantium tempore.</p>
-  "  data-title="web development"  data-form=' <div class="container">
-        <form id="signupForm">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="numKids">Number of Kids:</label>
-                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
-            </div>
-            <div class="form-group">
-                <p>Total Amount: <span id="totalAmount">$100</span></p>
-            </div>
-            <div class="form-group sub">
-                <button type="submit" id="submitBtn">Sign Up</button>
-            </div>
-        </form>
-        <div id="message" class="hidden">
-            <p class="success-message">We will get back to you shortly!</p>
-            <div class="animated-icons">
-                <!-- Animated icons or loading animation can be added here -->
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
-            </div>
-        </div>
-    </div>' >
+  <p>Our web design training equips kids with the skills to create their own websites. They’ll learn about HTML, CSS, and JavaScript,
+     gaining hands-on experience in building and designing web pages.</p>
+  "  data-title="web development" >
     
     
     web design</button> 
-  <button href="#" id="color3"  data-img="images/multi1.jpeg" data-toggle="modal" data-target="#exampleModal"  data-title="2d and 3d animation"
+  <button href="#" id="color3"  data-img="images/animation.webp" data-toggle="modal" data-target="#exampleModal"  data-title="2d and 3d animation"
   data-content="
     <h2>2d and 3d animation </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus dolorem aspernatur laboriosam dicta, 
-      reiciendis harum delectus, impedit unde, ipsa suscipit accusantium tempore.</p>
+    <p>In our animation courses, children bring their stories to life. They’ll master both 2D and 3D animation techniques, 
+      learning how to create captivating characters and dynamic scenes.</p>
     "
-  data-form=' <div class="container">
-        <form id="signupForm">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="numKids">Number of Kids:</label>
-                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
-            </div>
-            <div class="form-group">
-                <p>Total Amount: <span id="totalAmount">$100</span></p>
-            </div>
-            <div class="form-group sub">
-                <button type="submit" id="submitBtn">Sign Up</button>
-            </div>
-        </form>
-        <div id="message" class="hidden">
-            <p class="success-message">We will get back to you shortly!</p>
-            <div class="animated-icons">
-                <!-- Animated icons or loading animation can be added here -->
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
-            </div>
-        </div>
-    </div>'>2d and 3d animation</button>
+ >2d and 3d animation</button>
   <button href="#" id="color4" data-img="images/gra.jpeg" data-toggle="modal" data-target="#exampleModal"  data-title="Graphics and design"
   data-content="
     <h2> Graphic design </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus dolorem aspernatur laboriosam dicta, 
-      reiciendis harum delectus, impedit unde, ipsa suscipit accusantium tempore.</p>
+    <p>Our graphics design program empowers kids to express their creativity by learning essential design principles and tools. 
+      They’ll create stunning visuals and develop a strong foundation in digital art.</p>
     "
-  data-form=' <div class="container">
-        <form id="signupForm">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="numKids">Number of Kids:</label>
-                <input type="number" id="numKids" name="numKids" min="1" max="10" value="1" required>
-            </div>
-            <div class="form-group">
-                <p>Total Amount: <span id="totalAmount">$100</span></p>
-            </div>
-            <div class="form-group sub">
-                <button type="submit" id="submitBtn">Sign Up</button>
-            </div>
-        </form>
-        <div id="message" class="hidden">
-            <p class="success-message">We will get back to you shortly!</p>
-            <div class="animated-icons">
-                <!-- Animated icons or loading animation can be added here -->
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
-            </div>
-        </div>
-    </div>'> graphics design</button>
+ > graphics design</button>
 </div>
 
             </div>
@@ -1254,7 +1306,7 @@ width: 100%;
     <img src="icons/kite-removebg-preview.png" style="width:15%; "draggable="false">
   </div>
   <div class="overlay2 overlay45" style="position: absolute; z-index: 1000; bottom: 10px; right: 0px;" >
-    <img src="icons/kite-removebg-preview.png" style="width:15%; ">
+    <img src="icons/kite-removebg-preview.png" style="width:15%; " draggable="false">
   </div>
 
 
@@ -1283,7 +1335,7 @@ width: 100%;
     </div>
 </div>
 <div class="contact_us">
-  <button class="contact_info" id="contact_info">Register Now</button>
+  <button class="contact_info" id="openModalBtn">Register Now</button>
 </div>
  </div>
  
@@ -1302,8 +1354,8 @@ width: 100%;
             Child-Centric approach <span class="accordion_icons">+</span>
           </a>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Saepe, alias error. Rerum.</p>
+            <p>Our passionate educators create a nurturing, supportive environment, 
+              unlocking each child's full potential.</p>
           </div>
         </div>
         <div class="accordion-items" id="items2">
@@ -1311,8 +1363,8 @@ width: 100%;
            Hands-on-learning <span class="accordion_icons">+</span>
           </a>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Saepe, alias error. Rerum.</p>
+            <p>Learning comes to life with our fun, 
+              interactive curriculum that encourages exploration and discovery.</p>
           </div>
         </div>
         <div class="accordion-items" id="items3">
@@ -1320,8 +1372,8 @@ width: 100%;
             STEM Skill Development <span class="accordion_icons">+</span>
           </a>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Saepe, alias error. Rerum.</p>
+            <p>Our cutting-edge STEM curriculum ignites curiosity and fosters critical thinking through
+               hands-on projects in science, technology, engineering, and math.</p>
           </div>
         </div>
         <div class="accordion-items" id="items4">
@@ -1329,15 +1381,14 @@ width: 100%;
           Experienced Educators <span class="accordion_icons">+</span>
           </a>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Saepe, alias error. Rerum.</p>
+            <p>Our passionate educators create a nurturing, supportive environment, unlocking each child's full potential.</p>
           </div>
         </div>
       </div>
       
     </div>
     <div class="image-accordion ">
-        <img src="images/generate-a-black-girl-picture-of-a-girl-standing-f-8tDK-z1BTgSOYs-lzxI-wg-PGPlyx_-T7iXWhyDeuuSUA-removebg-preview.png" alt="Image">
+        <img src="images/kidskid.png" alt="Image" draggable="false">
     </div>
   </div>
   
@@ -1345,7 +1396,7 @@ width: 100%;
 <div class="section_partner" id="partner">
   <div class="service-section3" id="service-section3">
     <div class="service-image3">
-        <img src="images/create-an-image-of-a-handshake-between-two-black-i-iUBaOZliQ26INtH-gkD5sA-ua5pIC7IQ6KURiaaN6nq5A.jpeg" alt="Coding and Robotics">
+        <img src="images/handshake.jpeg" alt="Coding and Robotics" draggable="false">
     </div>
     <div class="service-content3">
         <h2>Our Partnership</h2>
@@ -1366,6 +1417,53 @@ width: 100%;
     </div>
 </div>
 </div>
+<section class="container_fluid program" style=" display: none; background-color: #f0da72;
+; width: 100%;">
+  <div class="overlay_flow" style="position: absolute;">
+    <img src="images/wavesOpacity.svg">
+  </div>
+  <div class="card-columns">
+    <div class="card ">
+      <div class="card-body text-center">
+        <div class="card-body-icons">
+          <span><i class="fa fa-desktop"></i></span>
+        </div>
+        <p class="card-text">Some text inside the first card</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <div class="card-body-icons">
+          <span><i class="fa fa-desktop"></i></span>
+        </div>
+        <p class="card-text">Some text inside the second card</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div>
+    </div>
+    </div>
+    <div class="card-group">
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the fifth card</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="container-fluid testionial" style="position: relative;">
   <div class="showa" style="position: absolute;">
 <img src="icons/svg (7).png">
@@ -1394,7 +1492,7 @@ width: 100%;
             
             </div>
             <div class="test_bottom">
-              <img src="images/pic1.png" alt="" width="10%">
+              <img src="images/pic1.png" alt="" width="10%" draggable="false">
               <p>
                 
                 <span>Mrs Emeobong Akan</span><br>
@@ -1426,7 +1524,7 @@ width: 100%;
             
             </div>
             <div class="test_bottom">
-              <img src="images/pic2.png" alt="" width="10%">
+              <img src="images/pic2.png" alt="" width="10%" draggable="false">
               <p>
                 
                 <span>Ernest Akan</span><br>
@@ -1458,10 +1556,10 @@ width: 100%;
             
             </div>
             <div class="test_bottom">
-              <img src="images/pic1.png" alt="" width="10%">
+              <img src="images/alex.png" alt="" width="10%" draggable="false">
               <p>
                 
-                <span>Alex udo</span><br>
+                <span>Alex ubong</span><br>
                 <small>kid</small>
                 </p>
         
@@ -1492,7 +1590,7 @@ width: 100%;
             
             </div>
             <div class="test_bottom">
-              <img src="images/pic1.png" alt="" width="10%">
+              <img src="images/glory.png" alt="" width="10%" draggable="false">
               <p>
                 
                 <span>Mrs Glory bassey</span><br>
@@ -1524,7 +1622,7 @@ width: 100%;
             
             </div>
             <div class="test_bottom">
-              <img src="images/pic3.png" alt="" width="10%">
+              <img src="images/pic3.png" alt="" width="10%" draggable="false">
               <p>
                 
                 <span>Inemesit obong</span><br>
@@ -1557,10 +1655,10 @@ width: 100%;
             
             </div>
             <div class="test_bottom">
-              <img src="images/pic1.png" alt="" width="10%">
+              <img src="images/emma.png" alt="" width="10%" draggable="false">
               <p>
                 
-                <span>Mrs Udofia Emmanuel</span><br>
+                <span> Emmanuel Ben</span><br>
                 <small>parent</small>
                 </p>
               </div>
@@ -1575,6 +1673,14 @@ width: 100%;
   
   
   </section>
+     <div id="construction-modal" class="modalr">
+        <div class="modal-contentr">
+            <span class="close-btnr">&times;</span>
+            <h2>Welcome to multicore kidszone</h2>
+            <p>We are currently putting some finishing touches on our website. During this time, some links might not be functioning properly and some pages might not be fully operational.</p>
+            <p>But because of the kids coding program, we had to launch it. Thank you for your patience and understanding. We look forward to providing you with a fantastic experience soon!</p>
+        </div>
+    </div>
 <footer
           class="text-center text-lg-start text-white"
           style="background-color: #1c2331;"
@@ -1722,23 +1828,107 @@ width: 100%;
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="hmmm">
-         <div id="modal-content">
+    
+      <div class="modal-body" style="justify-content: center; align-items: center;">
+       
+        
+          <div class="modal_img" style="order: 2; width: 50%;">
+            <img id="modal-img" src="" alt="Image" class="img-fluid mb-3" draggable="false" style="vertical-align: middle;">
           </div>
-      </div>
-      <div class="modal-body">
-        <div class="modal_img">
-          <img id="modal-img" src="" alt="Image" class="img-fluid mb-3">
-        </div>
-        <div class="modal_row">
-         
-          <div id="modal-form"></div>
-        </div>
+          <div class="hmmm">
+            <div id="modal-content">
+             </div>
+         </div>
+       
        
       </div>
     </div>
   </div>
 </div>
+<div id="formModale" class="modal fmodal">
+  <div class="modal-contente">
+      <span class="closee">&times;</span>
+      <form id="contact-forme" onsubmit="event.preventDefault(); sendEmail();">
+          <div class="form-group">
+              <label for="parent-name">Parent Name</label>
+              <input type="text" id="parent-name" name="parent_name" required>
+          </div>
+          <div class="form-group">
+              <label for="number-of-kids">Number of Kids</label>
+              <input type="number" id="number-of-kids" name="number_of_kids" required>
+          </div>
+          <div class="form-group">
+              <label for="contact">Contact Information</label>
+              <input type="text" id="contact" name="contact" required>
+          </div>
+          <input type="hidden" id="tracking-number" name="tracking_number">
+          <div class="form-group">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
+</div>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  
+  (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "8GUUN0ySe1bLvjl73",
+            });
+        })();
+    // Get the modal
+    var modal = document.getElementById("formModale");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("openModalBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closee")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "flex";
+        document.getElementById('tracking-number').value = generateTrackingNumber();
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Generate a random tracking number
+    function generateTrackingNumber() {
+        return 'KZ-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+    }
+
+    function sendEmail() {
+        var templateParams = {
+            parent_name: document.getElementById('parent-name').value,
+            number_of_kids: document.getElementById('number-of-kids').value,
+            contact: document.getElementById('contact').value,
+            tracking_number: document.getElementById('tracking-number').value
+        };
+
+        emailjs.send('multicore_id', 'multicore_id', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email sent successfully with tracking number: ' + templateParams.tracking_number);
+                modal.style.display = "none";
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Failed to send email.');
+            });
+    }
+
+</script>
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
@@ -1799,39 +1989,29 @@ width: 100%;
     observer.observe(serviceSection);
 });
 </script>
+
 <script>
-  // Set the date we're counting down to
-  const countDownDate = new Date("August 1, 2024 00:00:00").getTime();
+ document.addEventListener("DOMContentLoaded", function() {
+   var navbarCollapse = document.getElementById("navbarNav");
+    navbarCollapse.classList.remove("show");
 
-  // Update the countdown every 1 second
-  const x = setInterval(function() {
-      // Get today's date and time
-      const now = new Date().getTime();
+    var modal = document.getElementById("construction-modal");
+    var span = document.getElementsByClassName("close-btnr")[0];
 
-      // Find the distance between now and the countdown date
-      const distance = countDownDate - now;
+    // Display the modal
+    modal.style.display = "flex";
 
-      // Time calculations for days, hours, minutes and seconds
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Close the modal when the user clicks on the close button
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
 
-      // Display the result in the corresponding elements
-      document.getElementById("days").innerHTML = days;
-      document.getElementById("hours").innerHTML = hours;
-      document.getElementById("minutes").innerHTML = minutes;
-      document.getElementById("seconds").innerHTML = seconds;
-
-      // If the countdown is over, display some text
-      if (distance < 0) {
-          clearInterval(x);
-          document.querySelector(".countdown-container").innerHTML = "<h1>Countdown Expired</h1>";
-      }
-  }, 1000);
-
+    // Automatically hide the modal after 20 seconds
+    setTimeout(function() {
+        modal.style.display = "none";
+    }, 20000);
+});
 </script>
-
 
  <script src="assets/js/jquery-3.6.0.min.js"></script>
  <script src="assets/js/scrolltop.js"></script>
@@ -1841,6 +2021,7 @@ width: 100%;
 <script src="assets/js/modal.js"></script>
 <script src="assets/js/timeFunction.js"></script>
 <script src="assets/js/topview.js"></script>
+
 
   
 </html>
